@@ -1,0 +1,103 @@
+body {
+    background-color: #0b0200; /* Колір фону (темно-коричневий/чорний) */
+    color: #e0e0e0;            /* Колір основного тексту */
+    margin: 0;                 /* Прибираємо відступи від країв браузера */
+}
+
+/* КОРПУС ТЕРМІНАЛА */
+.terminal {
+    border: 1px solid #ff4500; /* Помаранчева рамка навколо тексту */
+    padding: 25px;             /* Відступ тексту від рамки всередині */
+    box-shadow: 0 0 40px ;  /* Ефект світіння навколо рамки */
+}
+
+/* ВІКНО ДІАЛОГУ */
+.dialogue-box {
+    height: 450px;             /* Висота вікна з текстом */
+    overflow-y: auto;          /* Додає прокрутку, якщо тексту забагато */
+}
+
+/* ГЕРОЇ (КОЛЬОРИ) */
+.jack {
+    color: #00d4ff;            /* Синій колір для реплік Джека */
+}
+
+.simon {
+    color: #ffcc00;            /* Жовтий колір для реплік Саймона */
+}
+
+/* ДІЇ ТА ШУМИ */
+.action {
+    font-style: italic;        /* Робить текст курсивом (наприклад, [звук металу]) */
+    color: #888;               /* Сірий колір для другорядних звуків */
+}
+
+/* ТРИВОГА */
+.alert {
+    animation: pulse 1.5s;  /* Змушує текст миготіти (червона тривога) */
+}
+ body {
+            background-color: #0d0200;
+            color: #d1d1d1;
+            font-family: 'Courier New', monospace;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+        .terminal {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #444;
+            padding: 30px;
+            background-color: #140500;
+            box-shadow: 0 0 30px rgba(255, 69, 0, 0.2);
+        }
+        .header {
+            color: #ff4500;
+            text-align: center;
+            border-bottom: 2px solid #ff4500;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .dialogue-box {
+            height: 500px;
+            overflow-y: auto;
+            padding-right: 15px;
+            border-left: 2px solid #333;
+            padding-left: 20px;
+        }
+        .speaker {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+         .jack { color: #5bc0de; } /* Блакитний для Джека */
+        .simon { color: #f0ad4e; } /* Помаранчевий для Саймона */
+        .action { color: #777; font-style: italic; }
+        .alert { color: #ff0000; font-weight: bold; animation: blink 1s infinite; }
+        
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        /* Стилізація смуги прокрутки */
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-thumb { background: #ff4500; }
+        .box-pointer {
+cursor: pointer;  
+}
+.cta-button {
+    color: #cc5200; 
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button {
+    background-image: linear-gradient(45deg, #ff4e00, #ec9f05);
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8); 
+    border: 2px solid #ff4e00;
+}
